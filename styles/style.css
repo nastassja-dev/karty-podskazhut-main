@@ -6,7 +6,7 @@
   --accent-font: 'STIX Two Text';
 }
 
-theme_dark {
+.page.theme_dark {
   --bg-color: #171717;
   --text-color: #b3b3b3;
   --accent-color: transparent;
@@ -61,7 +61,7 @@ button:disabled {
 
 .content-section {
   padding: 0 5vi;
-  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+  /*font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);*/
 }
 
 .header {
@@ -71,6 +71,13 @@ button:disabled {
 .header__title {
   font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
   margin-block-end: 40px;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 20px;
 }
 
 .header__menu {
@@ -98,6 +105,10 @@ button:disabled {
   font-size: 18px;
   background-color: transparent;
   cursor: pointer;
+}
+
+.header__theme-button:hover {
+  text-decoration: underline;
 }
 
 .header__theme-button_is-active {
@@ -237,3 +248,4 @@ button:disabled {
 .footer__copyright {
   font-size: 18px;
 }
+
